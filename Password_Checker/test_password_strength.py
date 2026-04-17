@@ -25,7 +25,6 @@ def test_single_password():
 
     # Run the zxcvbn strength analysis
     result = zxcvbn(password)
-
     print(f"Value:      {result['password']}")
     print(f"Score:      {result['score']}/4")
     # Use the slow offline hashing scenario — a realistic worst-case attacker estimate
